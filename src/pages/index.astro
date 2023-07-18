@@ -1,4 +1,5 @@
 ---
+import PageContainer from "../components/PageContainer.astro";
 ---
 
 <html lang="en">
@@ -17,6 +18,24 @@
     </head>
 
     <body>
-        <h1>Astro</h1>
+        <PageContainer>
+            <h1 class="text-xl text-center font-black">welcome to my page</h1>
+
+            <section>
+                <h2 class="text-center font-black">about me</h2>
+
+                <p class="text-center">
+                    hi i'm rayhan. a 13 y\o hobbyist programmer and writer.
+                </p>
+
+                <p class="text-center">
+                    i primarily write <b>typescript</b>, some <b>lua</b>, <b>rust</b>,
+                    <b>latex</b> and <b>groff\troff</b>. i'm having a bit of fun
+                    memeing while i'm at
+                    it. i also tutor and consult in a legacy react codebase on the
+                    side since i want to save for college.
+                </p>
+            </section>
+        </PageContainer>
     </body>
 </html>
