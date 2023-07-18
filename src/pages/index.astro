@@ -42,6 +42,88 @@ import PageContainer from "../components/PageContainer.astro";
                     codebase on the side since i want to save for college.
                 </p>
             </section>
+
+            <section class="py-3">
+                <h2 class="text-center font-black">
+                    my side <i>proe</i>-jects
+                </h2>
+
+                <div class="p-3"></div>
+
+                <div class="flex flex-col gap-2">
+                    <div class="p-3 bg-zinc-800">
+                        <div class="flex gap-3">
+                            <h3 class="font-black">base-ui</h3>
+                            <span class="text-sky-300">Luau</span>
+                        </div>
+
+                        <div class="p-3"></div>
+
+                        <p>
+                            a simple, extendable UI builder for luau,
+                            establishing primitives without bringing in a
+                            memory-hogging solution like a virtual dom. as a
+                            result of that, base-ui encourages the use of refs.
+                        </p>
+
+                        <div class="p-3"></div>
+
+                        <p>
+                            it also allows init hooks, allowing you to run
+                            events everytime an element/primitive is
+                            initialized, allowing modifications to the element.
+                            the built-in tailwind module for base-ui makes use
+                            of this feature.
+                        </p>
+
+                        <div class="p-3"></div>
+
+                        <p>it's syntax:</p>
+
+                        <div class="p-3"></div>
+
+                        <pre
+                            class="overflow-y-scroll p-3 bg-zinc-900">{
+`
+local player = game.Players.LocalPlayer
+local playerGui = player.PlayerGui
+
+local baseUi = game.ReplicatedStorage.Common.BaseUI
+
+local gui = require(baseUi.GUI)
+local initTailwind = require(baseUi.OptionalModules.TailwindIntegration)
+
+initTailwind()
+
+local function inventoryItem(props: { itemName: string })
+    return (
+        gui.frame({ Styles = "w-1/2 h-1/2 bg-red-300", Name = "InventoryItem" }, {
+            Instance.new("TextLabel"), -- interopt with non-base-ui elements
+
+            gui.textLabel({ Styles = "text-scaled", Name = "InventoryItemName" }, {
+                props.itemName, -- text nodes!
+            })
+        })
+    )
+end
+
+local screenGui = gui.screenGui({}, {
+    inventoryItem({ itemName = "Axe" }),
+})
+
+screenGui.Parent = playerGui`
+                        }</pre>
+
+                        <div class="p-3"></div>
+
+                        <a href="https://github.com/rayhan-wijaya/base-ui">
+                            <div class="p-3 w-full text-center bg-black">
+                                base-ui on github
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </PageContainer>
     </body>
 </html>
