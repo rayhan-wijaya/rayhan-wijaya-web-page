@@ -133,8 +133,9 @@ local customStyleMappings = {
     -- e.g.
     ["bg-transparent"] = { BackgroundTransparency = 0 },
 
-    -- even functions, which can take in the primitive!
-    -- very useful for reading a value from the primitive
+    -- you can even use functions, which take in the actual
+    -- primitive/element that's being styled! very useful for reading
+    -- a value from the element
     --
     -- an example for this use case would be UDim2-related styles
     -- since you can't directly mutate the value of a UDim2 but instead
