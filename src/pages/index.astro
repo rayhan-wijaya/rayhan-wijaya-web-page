@@ -116,6 +116,50 @@ screenGui.Parent = playerGui`
 
                         <div class="p-3"></div>
 
+                        custom tailwind styles are possible too
+
+                        <div class="p-3"></div>
+
+                        <pre
+                            class="overflow-y-scroll p-3 bg-zinc-900">{
+`
+local baseUi = game.ReplicatedStorage.Common.BaseUI
+local tailwindIntegrationTypes = require(baseUi.OptionalModules.TailwindIntegration.Types)
+
+local tailwindConfig = {}
+
+local customStyleMappings = {
+    -- Custom style mappings
+    -- e.g.
+    ["bg-transparent"] = { BackgroundTransparency = 0 },
+
+    -- even functions, which can take in the primitive!
+    -- very useful for reading a value from the primitive
+    --
+    -- an example for this use case would be UDim2-related styles
+    -- since you can't directly mutate the value of a UDim2 but instead
+    -- create a new UDim2 value from the existing values.
+    --
+    -- e.g.
+    ["w-full"] = {
+        Size = function (guiItem: baseUiTypes.GuiItem)
+            return UDim2.new(1, guiItem.Size.X.Offset, guiItem.Size.Y.Scale, guiItem.Size.Y.Offset)
+        end
+    },
+    ["w-1/2"] = {
+        Size = function (guiItem: baseUiTypes.GuiItem)
+            return UDim2.new(1/2, guiItem.Size.X.Offset, guiItem.Size.Y.Scale, guiItem.Size.Y.Offset)
+        end
+    },
+}
+
+tailwindConfig.customStyleMappings = customStyleMappings
+return tailwindConfig
+`
+                        }</pre>
+
+                        <div class="p-3"></div>
+
                         <a href="https://github.com/rayhan-wijaya/base-ui">
                             <div class="p-3 w-full text-center bg-black">
                                 base-ui on github
