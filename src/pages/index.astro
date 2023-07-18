@@ -190,6 +190,80 @@ return tailwindConfig
                             </div>
                         </a>
                     </div>
+
+                    <div class="p-3 bg-zinc-800">
+                        <div class="flex gap-3">
+                            <h3 class="font-black">hmark</h3>
+                            <span class="text-orange-300">Rust</span>
+                        </div>
+
+                        <div class="p-3"></div>
+
+                        <p>
+                            a straightforward crytographic bookmarking utility
+                            that can encrypt\decrypt bookmarks with "password
+                            keys", which are inputted by the user. available as
+                            a terminal program. you can have private bookmarks
+                            with this and easily view your bookmarks in a
+                            browser using `view` with the web flag `-w`.
+                        </p>
+
+                        <div class="p-3"></div>
+
+                        <pre
+                            class="overflow-y-scroll p-3 bg-zinc-900">{
+`
+$ hmark set -k gitlab_home -u https://gitlab.com
+$ hmark set -k hmark       -u https://github.com/rayhan-wijaya/hmark
+
+$ hmark view gitlab_home
+https://gitlab.com
+
+$ hmark view -w gitlab_home
+(browser session)
+
+$ hmark list
+hmark
+gitlab_home
+
+$ hmark rm gitlab_home hmark
+`}</pre>
+
+                        <div class="p-3"></div>
+
+                        <p>
+                            bookmarks you create will be stored in the
+                            ~/.hmark/bookmarks folder underneath hmark's
+                            dotfolder, where tilde, is of course, your home
+                            directory.
+                        </p>
+
+                        <div class="p-3"></div>
+
+                        <p>
+                            an exemplary bookmarks folder would be outlined
+                            like:
+                        </p>
+
+                        <div class="p-3"></div>
+
+                        <pre
+                            class="overflow-y-scroll p-3 bg-zinc-900">{
+`
+* ~/.hmark/bookmarks/
+    |  ffmpeg_docs  -> https://ffmpeg.org/ffmpeg.html/
+    |  diesel_docs  -> https://docs.rs/diesel/latest/diesel/
+    |  a_cool_tweet -> https://twitter.com/Neovim/status/1671419524854210560/
+`}</pre>
+
+                        <div class="p-3"></div>
+
+                        <a href="https://github.com/rayhan-wijaya/hmark">
+                            <div class="p-3 w-full text-center bg-black">
+                                hmark on github
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </section>
         </PageContainer>
