@@ -195,6 +195,36 @@ return tailwindConfig
                         <div class="p-3"></div>
 
                         <p>
+                            and here's how you can register an init hook that
+                            applies tailwind styles to an element. in base-ui.
+                            the example provided here is, of course, the
+                            initTailwind() function provided by the tailwind
+                            integration.
+                        </p>
+
+                        <div class="p-3"></div>
+
+                        <pre
+                            class="overflow-x-scroll p-3 bg-zinc-200 dark:bg-zinc-900">{
+`
+local applyStylesModule = require(script.Parent.ApplyStyles)
+local applyStylesToGuiItem = applyStylesModule.applyStylesToGuiItem
+
+local guiInitHooksModule = require(script.Parent.Parent.Parent.GUIInitHooks)
+local registerInitHook = guiInitHooksModule.registerInitHook
+
+local init = function ()
+    registerInitHook(function (guiItem, props)
+        applyStylesToGuiItem(props.Styles, guiItem)
+    end)
+end
+
+return init
+`}</pre>
+
+                        <div class="p-3"></div>
+
+                        <p>
                             i spent a bit of time on this project, mostly on the
                             tailwind integration. so i hope you found it
                             interesting.
