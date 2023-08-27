@@ -20,7 +20,7 @@ import StarIcon from "../components/StarIcon.astro";
 
         <style>
             body {
-                @apply font-mono dark:bg-zinc-900 dark:text-white;
+                @apply font-mono bg-zinc-900 text-white;
             }
         </style>
     </head>
@@ -40,7 +40,7 @@ import StarIcon from "../components/StarIcon.astro";
 
                 <div class="flex flex-wrap justify-center items-center gap-6">
                     <a
-                        class="flex gap-2 items-center underline text-sky-600 dark:text-sky-300"
+                        class="flex gap-2 items-center underline text-sky-300"
                         href="https://github.com/rayhan-wijaya"
                     >
                         <GithubIcon />
@@ -48,7 +48,7 @@ import StarIcon from "../components/StarIcon.astro";
                     </a>
 
                     <a
-                        class="flex gap-2 items-center underline text-sky-600 dark:text-sky-300"
+                        class="flex gap-2 items-center underline text-sky-300"
                         href="https://twitter.com/@react_query"
                     >
                         <TwitterIcon />
@@ -56,7 +56,7 @@ import StarIcon from "../components/StarIcon.astro";
                     </a>
 
                     <a
-                        class="flex gap-2 items-center underline text-sky-600 dark:text-sky-300"
+                        class="flex gap-2 items-center underline text-sky-300"
                         href="https://www.superprof.co.id/hello-rayhan-will-teach-you-how-build-your-own-website-and-web-application-more-easier-the-end-you-can-build-your-own.html"
                     >
                         <SuperprofIcon />
@@ -74,7 +74,7 @@ import StarIcon from "../components/StarIcon.astro";
                     i now work part-time at a software firm, working on internal
                     tools for them.
                     <a
-                        class="underline text-sky-600 dark:text-sky-300"
+                        class="underline text-sky-300"
                         href="https://www.superprof.co.id/hello-rayhan-will-teach-you-how-build-your-own-website-and-web-application-more-easier-the-end-you-can-build-your-own.html"
                         >i also tutor and consult</a
                     >
@@ -91,7 +91,7 @@ import StarIcon from "../components/StarIcon.astro";
 
                 <div class="p-3"></div>
 
-                <div class="p-3 bg-zinc-100 dark:bg-zinc-800 rounded-lg">
+                <div class="p-3 bg-zinc-800 rounded-lg">
                     <div class="flex gap-3 items-center">
                         <img
                             src="/testimony/monica.webp"
@@ -136,7 +136,7 @@ import StarIcon from "../components/StarIcon.astro";
                         href="https://www.superprof.co.id/hello-rayhan-will-teach-you-how-build-your-own-website-and-web-application-more-easier-the-end-you-can-build-your-own.html#:~:text=Saya pertama kali belajar coding."
                     >
                         <div
-                            class="p-3 w-full text-center bg-zinc-500 text-white dark:bg-black rounded-lg flex justify-center items-center gap-3"
+                            class="p-3 w-full text-center text-white bg-black rounded-lg flex justify-center items-center gap-3"
                         >
                             <SuperprofIcon />
                             view testimony
@@ -155,10 +155,10 @@ import StarIcon from "../components/StarIcon.astro";
                 <div class="p-3"></div>
 
                 <div class="flex flex-col gap-6">
-                    <div class="p-3 bg-zinc-100 dark:bg-zinc-800 rounded-lg">
+                    <div class="p-3 bg-zinc-800 rounded-lg">
                         <div class="flex gap-3">
                             <h3 class="font-black">base-ui</h3>
-                            <span class="text-sky-600 dark:text-sky-300">
+                            <span class="text-sky-300">
                                 Luau
                             </span>
                         </div>
@@ -206,7 +206,7 @@ import StarIcon from "../components/StarIcon.astro";
                         <div class="p-3"></div>
 
                         <pre
-                            class="overflow-x-scroll p-3 bg-zinc-200 dark:bg-zinc-900 rounded-lg">{
+                            class="overflow-x-scroll p-3 bg-zinc-900 rounded-lg">{
 `
 local player = game.Players.LocalPlayer
 local playerGui = player.PlayerGui
@@ -220,7 +220,7 @@ initTailwind()
 
 local function inventoryItem(props: { itemName: string })
     return (
-        gui.frame({ Styles = "w-1/2 h-1/2 bg-red-300", Name = "InventoryItem" }, {
+        gui.frame({ Styles = "w-1/2 h-1/2 Name = "InventoryItem" }, {
             Instance.new("TextLabel"), -- interopt with non-base-ui elements
 
             gui.textLabel({ Styles = "text-scaled", Name = "InventoryItemName" }, {
@@ -243,7 +243,7 @@ screenGui.Parent = playerGui`}</pre>
                         <div class="p-3"></div>
 
                         <pre
-                            class="overflow-x-scroll p-3 bg-zinc-200 dark:bg-zinc-900 rounded-lg">{
+                            class="overflow-x-scroll p-3 bg-zinc-900 rounded-lg">{
 `
 local baseUi = game.ReplicatedStorage.Common.BaseUI
 local tailwindIntegrationTypes = require(baseUi.OptionalModules.TailwindIntegration.Types)
@@ -293,7 +293,7 @@ return tailwindConfig
                         <div class="p-3"></div>
 
                         <pre
-                            class="overflow-x-scroll p-3 bg-zinc-200 dark:bg-zinc-900 rounded-lg">{
+                            class="overflow-x-scroll p-3 bg-zinc-900 rounded-lg">{
 `
 local applyStylesModule = require(script.Parent.ApplyStyles)
 local applyStylesToGuiItem = applyStylesModule.applyStylesToGuiItem
@@ -324,7 +324,7 @@ return init
 
                         <a href="https://github.com/rayhan-wijaya/base-ui">
                             <div
-                                class="p-3 w-full text-center bg-zinc-500 text-white dark:bg-black rounded-lg flex justify-center items-center gap-3"
+                                class="p-3 w-full text-center text-white bg-black rounded-lg flex justify-center items-center gap-3"
                             >
                                 <GithubIcon />
                                 base-ui on github
@@ -332,10 +332,10 @@ return init
                         </a>
                     </div>
 
-                    <div class="p-3 bg-zinc-100 dark:bg-zinc-800 rounded-lg">
+                    <div class="p-3 bg-zinc-800 rounded-lg">
                         <div class="flex gap-3">
                             <h3 class="font-black">hmark</h3>
-                            <span class="text-orange-400 dark:text-orange-300">
+                            <span class="text-orange-300">
                                 Rust
                             </span>
                         </div>
@@ -354,7 +354,7 @@ return init
                         <div class="p-3"></div>
 
                         <pre
-                            class="overflow-x-scroll p-3 bg-zinc-200 dark:bg-zinc-900 rounded-lg">{
+                            class="overflow-x-scroll p-3 bg-zinc-900 rounded-lg">{
 `
 $ hmark set -k gitlab_home -u https://gitlab.com
 $ hmark set -k hmark       -u https://github.com/rayhan-wijaya/hmark
@@ -391,7 +391,7 @@ $ hmark rm gitlab_home hmark
                         <div class="p-3"></div>
 
                         <pre
-                            class="overflow-x-scroll p-3 bg-zinc-200 dark:bg-zinc-900 rounded-lg">{
+                            class="overflow-x-scroll p-3 bg-zinc-900 rounded-lg">{
 `
 * ~/.hmark/bookmarks/
     |  ffmpeg_docs  -> https://ffmpeg.org/ffmpeg.html/
@@ -403,7 +403,7 @@ $ hmark rm gitlab_home hmark
 
                         <a href="https://github.com/rayhan-wijaya/hmark">
                             <div
-                                class="p-3 w-full text-center bg-zinc-500 text-white dark:bg-black rounded-lg flex justify-center items-center gap-3"
+                                class="p-3 w-full text-center text-white bg-black rounded-lg flex justify-center items-center gap-3"
                             >
                                 <GithubIcon />
                                 hmark on github
