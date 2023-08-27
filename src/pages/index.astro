@@ -159,10 +159,61 @@ import StarIcon from "../components/StarIcon.astro";
                 <div class="flex flex-col gap-6">
                     <div class="p-3 bg-zinc-800 rounded-lg">
                         <div class="flex gap-3">
-                            <h3 class="font-black">base-ui</h3>
-                            <span class="text-sky-300">
-                                Luau
+                            <h3 class="font-black">mobile-data-tool</h3>
+
+                            <span>
+                                <span class="text-sky-300">React.js</span>
+                                <span class="text-gray-400">Fastify</span>
                             </span>
+                        </div>
+
+                        <div class="p-3"></div>
+
+                        <p>
+                            an internal tool i made for a software firm that
+                            scrapes the realtime prices of mobile data from
+                            three vendors and gets the cheapest, most available
+                            mobile data. the scraping process utilized a web
+                            driver (with Selenium) and product identifiers to
+                            label each product which are stored in a separate
+                            database such as I10 for Indosat Rp 10 000 and SM50
+                            for Smartfren Rp 50 000. these were also used to
+                            locate the products in the three vendors. the
+                            vendors had different product identifiers for the
+                            same product so naturally, every product identifier
+                            in the database were different for every supplier.
+                        </p>
+
+                        <div class="p-3"></div>
+
+                        <p>
+                            since there were no APIs provided by either of the
+                            three vendors and the fact that the interactions
+                            were user-like, that being the fact that one of the
+                            supplier's dashboard page had a captcha in its login
+                            page, i needed to use a web driver instead.
+                        </p>
+
+                        <div class="p-3"></div>
+
+                        <p>
+                            just to give some information on the code a bit: for
+                            each supplier, i created an adapter, in spirit of
+                            the adapter design pattern, which all implemented
+                            getProducts() and getRealtimePrices(). with this, i
+                            could easily add new suppliers to the bucket without
+                            interfering much with the code. an amount of
+                            dependency injection was also used here for passing
+                            in a database pool connection but then i quickly
+                            moved off of it due to it causing more problems than
+                            i initially would've thought.
+                        </p>
+                    </div>
+
+                    <div class="p-3 bg-zinc-800 rounded-lg">
+                        <div class="flex gap-3">
+                            <h3 class="font-black">base-ui</h3>
+                            <span class="text-sky-300"> Luau</span>
                         </div>
 
                         <div class="p-3"></div>
