@@ -1,5 +1,6 @@
 ---
 import PageContainer from "../components/PageContainer.astro";
+import Analytics from "../components/Analytics.astro";
 import TwitterIcon from "../components/TwitterIcon.astro";
 import GithubIcon from "../components/GithubIcon.astro";
 import SuperprofIcon from "../components/SuperprofIcon.astro";
@@ -18,11 +19,7 @@ import StarIcon from "../components/StarIcon.astro";
         />
         <title>rayhan-wijaya's web page</title>
 
-        <script>
-            window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-        </script>
-
-        <script is:inline defer={true} src="/_vercel/insights/script.js" />
+        <Analytics />
 
         <style>
             body {
