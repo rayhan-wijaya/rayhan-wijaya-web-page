@@ -1,0 +1,16 @@
+<script>
+    type Window = typeof window & {
+        va: unknown;
+        vaq: unknown[];
+    };
+
+    (window as Window).va =
+        (window as Window).va ||
+        function () {
+            ((window as Window).vaq = (window as Window).vaq || []).push(
+                arguments
+            );
+        };
+</script>
+
+<script is:inline defer={true} src="/_vercel/insights/script.js"></script>
