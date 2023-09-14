@@ -277,11 +277,11 @@ import StarIcon from "../components/StarIcon.astro";
                             for the captcha, i used tesseract.js to recognize
                             the image by screenshotting the image element using
                             the web driver, before appending the base64 stream
-                            to a data url, in which can be given to tesseract's <div
+                            to a data url, in which can be given to tesseract's <span
                                 class="inline-block bg-zinc-900 p-1 rounded-md"
                             >
                                 recognize()
-                            </div> function. this function accepts in a url of course.
+                            </span> function. this function accepts in a url of course.
                             but since the recognition result isn't perfect, like
                             "8 + 7" being parsed as "8 + T", i created some certain
                             character replacements to patch the end result. in total,
@@ -298,15 +298,15 @@ import StarIcon from "../components/StarIcon.astro";
                             just to give some information on the code a bit: for
                             each supplier, i created an adapter, in spirit of
                             the adapter design pattern, which all implemented
-                            <div
+                            <span
                                 class="inline-block bg-zinc-900 p-1 rounded-md"
                             >
                                 getProducts()
-                            </div> and <div
+                            </span> and <span
                                 class="inline-block bg-zinc-900 p-1 rounded-md"
                             >
                                 getRealtimePrices()
-                            </div>. with this, i could easily add new suppliers
+                            </span>. with this, i could easily add new suppliers
                             to the bucket without interfering much with the
                             code. an amount of dependency injection was also
                             used here for passing in a database pool connection
