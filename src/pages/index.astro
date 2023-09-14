@@ -295,13 +295,20 @@ import StarIcon from "../components/StarIcon.astro";
                             just to give some information on the code a bit: for
                             each supplier, i created an adapter, in spirit of
                             the adapter design pattern, which all implemented
-                            getProducts() and getRealtimePrices(). with this, i
-                            could easily add new suppliers to the bucket without
-                            interfering much with the code. an amount of
-                            dependency injection was also used here for passing
-                            in a database pool connection but then i quickly
-                            moved off of it due to it causing more problems than
-                            i initially would've thought.
+                            <div
+                                class="inline-block bg-zinc-900 p-1 rounded-md"
+                            >
+                                getProducts()
+                            </div> and <div
+                                class="inline-block bg-zinc-900 p-1 rounded-md"
+                            >
+                                getRealtimePrices()
+                            </div>. with this, i could easily add new suppliers
+                            to the bucket without interfering much with the
+                            code. an amount of dependency injection was also
+                            used here for passing in a database pool connection
+                            but then i quickly moved off of it due to it causing
+                            more problems than i initially would've thought.
                         </p>
                     </div>
 
