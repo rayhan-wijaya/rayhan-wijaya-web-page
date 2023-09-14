@@ -277,14 +277,17 @@ import StarIcon from "../components/StarIcon.astro";
                             for the captcha, i used tesseract.js to recognize
                             the image by screenshotting the image element using
                             the web driver, before appending the base64 stream
-                            to a data url, in which can be given to tesseract's
-                            recognize() function. this function accepts in a url
-                            of course. but since the recognition result isn't
-                            perfect, like "8 + 7" being parsed as "8 + T", i
-                            created some certain character replacements to patch
-                            the end result. in total, there were 29
-                            sophisticated character replacements, like T {"->"} 7,
-                            & {"->"} 8, Hh {"->"} 5, and more. and i finally used
+                            to a data url, in which can be given to tesseract's <div
+                                class="inline-block bg-zinc-900 p-1 rounded-md"
+                            >
+                                recognize()
+                            </div> function. this function accepts in a url of course.
+                            but since the recognition result isn't perfect, like
+                            "8 + 7" being parsed as "8 + T", i created some certain
+                            character replacements to patch the end result. in total,
+                            there were 29 sophisticated character replacements, like
+                            T {"->"} 7, & {"->"} 8, Hh {"->"} 5, and more. and i
+                            finally used
                             <span class="whitespace-nowrap">expr-eval</span> to evaluate
                             the expression.
                         </p>
