@@ -389,7 +389,10 @@ local player = game.Players.LocalPlayer
 local playerGui = player.PlayerGui
 
 guiInitHooks.registerInitHook(function (guiItem, props)
-  print("A new GUI primitive has been initialized! It's called " .. guiItem.Name)
+  print(
+    "A new GUI primitive has been initialized! It's called "
+    .. guiItem.Name
+  )
 end)
 
 local inventory = {
