@@ -420,10 +420,7 @@ local inventoryFrame = function ()
   end
 
   return (
-    gui.frame({
-      Styles = "w-1/2 h-1/5 bg-red-800",
-      Name = "InventoryFrame"
-    }, (
+    gui.frame({ Styles = "w-1/2 h-1/5 bg-red-800", Name = "InventoryFrame" }, (
       inventoryItems()
     ))
   )
