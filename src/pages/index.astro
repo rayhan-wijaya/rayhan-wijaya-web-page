@@ -21,6 +21,18 @@ import GithubIcon from "../components/GithubIcon.astro";
             body {
                 @apply font-mono bg-zinc-900 text-white;
             }
+
+            *::selection {
+                @apply bg-gray-600 text-white;
+            }
+
+            *::-moz-selection {
+                @apply bg-gray-600 text-white;
+            }
+
+            *::-webkit-selection {
+                @apply bg-gray-600 text-white;
+            }
         </style>
     </head>
 
