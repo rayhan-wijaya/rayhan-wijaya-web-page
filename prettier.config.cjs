@@ -6,6 +6,7 @@ const config = {
     tabWidth: 4,
     semi: true,
     singleQuote: false,
+    plugins: ["prettier-plugin-astro"],
 };
 
 module.exports = config;
