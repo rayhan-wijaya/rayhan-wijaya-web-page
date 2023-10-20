@@ -25,16 +25,62 @@ import GithubIcon from "../components/GithubIcon.astro";
     </head>
 
     <body>
-        <img
-            class="h-24 w-full object-cover"
-            src="/background/house.jpg"
-            alt="a burnt-down house of an unknown origin"
-        />
-
-        <div class="p-2"></div>
-
         <PageContainer>
-            <h1 class="text-xl text-center font-black">rayhan</h1>
+            <h1 class="text-xl text-center font-black">rayhan&mdash;wijaya</h1>
+
+            <div class="p-2"></div>
+
+            <div class="mx-auto w-fit">
+                <div class="inline-flex items-center justify-center gap-x-3">
+                    <a
+                        aria-label="Github social link"
+                        title="Github"
+                        class="py-3 px-5 bg-black rounded-lg hover:text-gray-200 hover:border-gray-200 hover:bg-gray-800 border-gray-700 border-b-2 transition-all"
+                        href="https://github.com/rayhan-wijaya"
+                    >
+                        <GithubIcon />
+                    </a>
+
+                    <a
+                        aria-label="Twitter social link"
+                        title="Twitter"
+                        class="py-3 px-5 bg-black rounded-lg hover:text-sky-200 hover:border-sky-300 hover:bg-sky-950 border-gray-700 border-b-2 transition-all"
+                        href="https://twitter.com/@react_query"
+                    >
+                        <TwitterIcon />
+                    </a>
+
+                    <a
+                        aria-label="Superprof social link"
+                        title="Superprof"
+                        class="py-3 px-5 bg-black rounded-lg hover:text-rose-200 hover:border-rose-100 hover:bg-rose-950 border-gray-700 border-b-2 transition-all"
+                        href="https://www.superprof.co.id/hello-rayhan-will-teach-you-how-build-your-own-website-and-web-application-more-easier-the-end-you-can-build-your-own.html"
+                    >
+                        <SuperprofIcon />
+                    </a>
+
+                    <a
+                        aria-label="Email link"
+                        title="Email"
+                        class="py-3 px-5 bg-black rounded-lg hover:text-amber-200 hover:border-amber-100 hover:bg-amber-950 border-gray-700 border-b-2 transition-all"
+                        href="mailto:rayhanwijaya4444@gmail.com"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="w-6 h-6"
+                        >
+                            <path
+                                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                            ></path>
+                            <path
+                                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                            ></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </PageContainer>
     </body>
 </html>
