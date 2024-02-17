@@ -2,6 +2,75 @@
 import GithubIcon from "../components/GithubIcon.astro";
 ---
 
+<div class="rounded-lg bg-zinc-800 border border-gray-500 col-span-2">
+    <a class="hover:cursor-zoom-in" href="/screenshots/mobile-data-scraper-json.png">
+        <img
+            class="rounded-t-lg hover:opacity-70 transition-opacity"
+            src="/screenshots/mobile-data-scraper-json.png"
+        />
+    </a>
+
+    <hr class="border-gray-500" />
+
+    <div class="p-3">
+        <div class="flex gap-3 items-center">
+            <h3 class="whitespace-nowrap">mobile-data-scraper</h3>
+            <div title="Private project">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="w-5 h-5 fill-red-400"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M3.28 2.22a.75.75 0 00-1.06 1.06l14.5 14.5a.75.75 0 101.06-1.06l-1.745-1.745a10.029 10.029 0 003.3-4.38 1.651 1.651 0 000-1.185A10.004 10.004 0 009.999 3a9.956 9.956 0 00-4.744 1.194L3.28 2.22zM7.752 6.69l1.092 1.092a2.5 2.5 0 013.374 3.373l1.091 1.092a4 4 0 00-5.557-5.557z"
+                        clip-rule="evenodd">
+                    </path>
+
+                    <path d="M10.748 13.93l2.523 2.523a9.987 9.987 0 01-3.27.547c-4.258 0-7.894-2.66-9.337-6.41a1.651 1.651 0 010-1.186A10.007 10.007 0 012.839 6.02L6.07 9.252a4 4 0 004.678 4.678z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="p-2"></div>
+
+        <div class="flex flex-wrap gap-3">
+            <span class="rounded-full px-3 bg-gray-700">selenium</span>
+            <span class="rounded-full px-3 bg-gray-700">fastify</span>
+            <span class="rounded-full px-3 bg-gray-700">node.js</span>
+        </div>
+
+        <div class="p-2"></div>
+
+        <p class="text-gray-400">
+            A backend service for a company I help that scrapes mobile data
+            realtime prices from suppliers in a configurable manner by parsing
+            and using a JSON config, and finally putting the prices to display
+            in an internal selling system, which the company currently uses.
+        </p>
+
+        <div class="p-2"></div>
+
+        <p class="text-gray-400">
+            The configuration describes the pages of a supplier's dashboard for
+            the service to scrape. Along with an optional condition that
+            denotes whether each page is finished loading, and credentials for
+            the login page. For each element, they are described by a list of
+            query selectors that can even fallback to the next selector in the
+            list if the first one fails.
+        </p>
+
+        <div class="p-2"></div>
+
+        <p class="text-gray-400">
+            If you're interested in the technical details, I'll create a blog
+            post discussing about this shortly!
+        </p>
+    </div>
+</div>
+
 <div class="rounded-lg bg-zinc-800 border border-gray-500">
     <a class="hover:cursor-zoom-in" href="/screenshots/mobile-data-transaction.png">
         <img
@@ -68,9 +137,7 @@ import GithubIcon from "../components/GithubIcon.astro";
 
     <div class="p-3">
         <div class="flex gap-3 items-center">
-            <h3 class="whitespace-nowrap">
-                mobile-data-scraper
-            </h3>
+            <h3 class="whitespace-nowrap">mobile-data-scraper (2)</h3>
             <div title="Private project">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -95,9 +162,9 @@ import GithubIcon from "../components/GithubIcon.astro";
         <div class="p-2"></div>
 
         <div class="flex flex-wrap gap-3">
-            <span class="rounded-full px-3 bg-gray-700">react</span>
-            <span class="rounded-full px-3 bg-gray-700">fastify</span>
             <span class="rounded-full px-3 bg-gray-700">selenium</span>
+            <span class="rounded-full px-3 bg-gray-700">fastify</span>
+            <span class="rounded-full px-3 bg-gray-700">react</span>
         </div>
 
         <div class="p-2"></div>
